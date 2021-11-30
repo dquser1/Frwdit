@@ -8,9 +8,7 @@ class Translation(object):
 
 This Bot forward all files to One Public channel to Your Personal channel
 
-More details /help
-
-© @Mo_Tech_YT</b>"""
+More details /help</b>"""
   CAPTION = "`{}`\n\n" + str(Config.CAPTION)
   HELP_TXT = """<b>Follow These Steps!!</b>
 
