@@ -10,14 +10,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-    buttons = [[
-        InlineKeyboardButton('🗣️Group', url='t.me/tvseriezzz'),
-        InlineKeyboardButton('📢Updates', url='t.me/tvseriezzz_update'),
-        InlineKeyboardButton('📝 Chat Group', url='https://t.me/MrCVENOM_chat'),
-    ],[
-        InlineKeyboardButton('🎭 Group 🎭', url='https://t.me/tvseriezzz')
-    ]]
-    reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
         chat_id=message.chat.id,
         reply_markup=reply_markup,
